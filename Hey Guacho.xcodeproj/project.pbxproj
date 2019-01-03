@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACCBB93F21DE4689001BC247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB93E21DE4689001BC247 /* AppDelegate.swift */; };
+		ACCBB94121DE4689001BC247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB94021DE4689001BC247 /* ViewController.swift */; };
+		ACCBB94421DE4689001BC247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB94221DE4689001BC247 /* Main.storyboard */; };
+		ACCBB94621DE468B001BC247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB94521DE468B001BC247 /* Assets.xcassets */; };
+		ACCBB94921DE468B001BC247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB94721DE468B001BC247 /* LaunchScreen.storyboard */; };
+		ACCBB94E21DE468B001BC247 /* Hey Guacho WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ACCBB94D21DE468B001BC247 /* Hey Guacho WatchKit App.app */; };
+		ACCBB95421DE468B001BC247 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB95221DE468B001BC247 /* Interface.storyboard */; };
+		ACCBB95621DE468C001BC247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB95521DE468C001BC247 /* Assets.xcassets */; };
+		ACCBB95D21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACCBB95C21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACCBB96221DE468C001BC247 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB96121DE468C001BC247 /* InterfaceController.swift */; };
+		ACCBB96421DE468C001BC247 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB96321DE468C001BC247 /* ExtensionDelegate.swift */; };
+		ACCBB96621DE468D001BC247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB96521DE468D001BC247 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACCBB94F21DE468B001BC247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACCBB93321DE4689001BC247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCBB94C21DE468B001BC247;
+			remoteInfo = "Hey Guacho WatchKit App";
+		};
+		ACCBB95E21DE468C001BC247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACCBB93321DE4689001BC247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCBB95B21DE468C001BC247;
+			remoteInfo = "Hey Guacho WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACCBB96D21DE468D001BC247 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACCBB95D21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCBB97121DE468D001BC247 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ACCBB94E21DE468B001BC247 /* Hey Guacho WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ACCBB93B21DE4689001BC247 /* Hey Guacho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hey Guacho.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCBB93E21DE4689001BC247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACCBB94021DE4689001BC247 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACCBB94321DE4689001BC247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACCBB94521DE468B001BC247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACCBB94821DE468B001BC247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACCBB94A21DE468B001BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCBB94D21DE468B001BC247 /* Hey Guacho WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hey Guacho WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCBB95321DE468B001BC247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ACCBB95521DE468C001BC247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACCBB95721DE468C001BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCBB95C21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hey Guacho WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCBB96121DE468C001BC247 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		ACCBB96321DE468C001BC247 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ACCBB96521DE468D001BC247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACCBB96721DE468D001BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACCBB93821DE4689001BC247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCBB95921DE468C001BC247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACCBB93221DE4689001BC247 = {
+			isa = PBXGroup;
+			children = (
+				ACCBB93D21DE4689001BC247 /* Hey Guacho */,
+				ACCBB95121DE468B001BC247 /* Hey Guacho WatchKit App */,
+				ACCBB96021DE468C001BC247 /* Hey Guacho WatchKit Extension */,
+				ACCBB93C21DE4689001BC247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACCBB93C21DE4689001BC247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACCBB93B21DE4689001BC247 /* Hey Guacho.app */,
+				ACCBB94D21DE468B001BC247 /* Hey Guacho WatchKit App.app */,
+				ACCBB95C21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACCBB93D21DE4689001BC247 /* Hey Guacho */ = {
+			isa = PBXGroup;
+			children = (
+				ACCBB93E21DE4689001BC247 /* AppDelegate.swift */,
+				ACCBB94021DE4689001BC247 /* ViewController.swift */,
+				ACCBB94221DE4689001BC247 /* Main.storyboard */,
+				ACCBB94521DE468B001BC247 /* Assets.xcassets */,
+				ACCBB94721DE468B001BC247 /* LaunchScreen.storyboard */,
+				ACCBB94A21DE468B001BC247 /* Info.plist */,
+			);
+			path = "Hey Guacho";
+			sourceTree = "<group>";
+		};
+		ACCBB95121DE468B001BC247 /* Hey Guacho WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				ACCBB95221DE468B001BC247 /* Interface.storyboard */,
+				ACCBB95521DE468C001BC247 /* Assets.xcassets */,
+				ACCBB95721DE468C001BC247 /* Info.plist */,
+			);
+			path = "Hey Guacho WatchKit App";
+			sourceTree = "<group>";
+		};
+		ACCBB96021DE468C001BC247 /* Hey Guacho WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACCBB96121DE468C001BC247 /* InterfaceController.swift */,
+				ACCBB96321DE468C001BC247 /* ExtensionDelegate.swift */,
+				ACCBB96521DE468D001BC247 /* Assets.xcassets */,
+				ACCBB96721DE468D001BC247 /* Info.plist */,
+			);
+			path = "Hey Guacho WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACCBB93A21DE4689001BC247 /* Hey Guacho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCBB97221DE468D001BC247 /* Build configuration list for PBXNativeTarget "Hey Guacho" */;
+			buildPhases = (
+				ACCBB93721DE4689001BC247 /* Sources */,
+				ACCBB93821DE4689001BC247 /* Frameworks */,
+				ACCBB93921DE4689001BC247 /* Resources */,
+				ACCBB97121DE468D001BC247 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACCBB95021DE468B001BC247 /* PBXTargetDependency */,
+			);
+			name = "Hey Guacho";
+			productName = "Hey Guacho";
+			productReference = ACCBB93B21DE4689001BC247 /* Hey Guacho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACCBB94C21DE468B001BC247 /* Hey Guacho WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCBB96E21DE468D001BC247 /* Build configuration list for PBXNativeTarget "Hey Guacho WatchKit App" */;
+			buildPhases = (
+				ACCBB94B21DE468B001BC247 /* Resources */,
+				ACCBB96D21DE468D001BC247 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACCBB95F21DE468C001BC247 /* PBXTargetDependency */,
+			);
+			name = "Hey Guacho WatchKit App";
+			productName = "Hey Guacho WatchKit App";
+			productReference = ACCBB94D21DE468B001BC247 /* Hey Guacho WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ACCBB95B21DE468C001BC247 /* Hey Guacho WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCBB96A21DE468D001BC247 /* Build configuration list for PBXNativeTarget "Hey Guacho WatchKit Extension" */;
+			buildPhases = (
+				ACCBB95821DE468C001BC247 /* Sources */,
+				ACCBB95921DE468C001BC247 /* Frameworks */,
+				ACCBB95A21DE468C001BC247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hey Guacho WatchKit Extension";
+			productName = "Hey Guacho WatchKit Extension";
+			productReference = ACCBB95C21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACCBB93321DE4689001BC247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mario Saul";
+				TargetAttributes = {
+					ACCBB93A21DE4689001BC247 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					ACCBB94C21DE468B001BC247 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					ACCBB95B21DE468C001BC247 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = ACCBB93621DE4689001BC247 /* Build configuration list for PBXProject "Hey Guacho" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACCBB93221DE4689001BC247;
+			productRefGroup = ACCBB93C21DE4689001BC247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACCBB93A21DE4689001BC247 /* Hey Guacho */,
+				ACCBB94C21DE468B001BC247 /* Hey Guacho WatchKit App */,
+				ACCBB95B21DE468C001BC247 /* Hey Guacho WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACCBB93921DE4689001BC247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCBB94921DE468B001BC247 /* LaunchScreen.storyboard in Resources */,
+				ACCBB94621DE468B001BC247 /* Assets.xcassets in Resources */,
+				ACCBB94421DE4689001BC247 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCBB94B21DE468B001BC247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCBB95621DE468C001BC247 /* Assets.xcassets in Resources */,
+				ACCBB95421DE468B001BC247 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCBB95A21DE468C001BC247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCBB96621DE468D001BC247 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACCBB93721DE4689001BC247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCBB94121DE4689001BC247 /* ViewController.swift in Sources */,
+				ACCBB93F21DE4689001BC247 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCBB95821DE468C001BC247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCBB96421DE468C001BC247 /* ExtensionDelegate.swift in Sources */,
+				ACCBB96221DE468C001BC247 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACCBB95021DE468B001BC247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACCBB94C21DE468B001BC247 /* Hey Guacho WatchKit App */;
+			targetProxy = ACCBB94F21DE468B001BC247 /* PBXContainerItemProxy */;
+		};
+		ACCBB95F21DE468C001BC247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACCBB95B21DE468C001BC247 /* Hey Guacho WatchKit Extension */;
+			targetProxy = ACCBB95E21DE468C001BC247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACCBB94221DE4689001BC247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCBB94321DE4689001BC247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACCBB94721DE468B001BC247 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCBB94821DE468B001BC247 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ACCBB95221DE468B001BC247 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCBB95321DE468B001BC247 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACCBB96821DE468D001BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACCBB96921DE468D001BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACCBB96B21DE468D001BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hey Guacho WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wyeworks.Hey-Guacho.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		ACCBB96C21DE468D001BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hey Guacho WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wyeworks.Hey-Guacho.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		ACCBB96F21DE468D001BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Hey_Guacho_WatchKit_Extension;
+				INFOPLIST_FILE = "Hey Guacho WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "wyeworks.Hey-Guacho.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		ACCBB97021DE468D001BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Hey_Guacho_WatchKit_Extension;
+				INFOPLIST_FILE = "Hey Guacho WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "wyeworks.Hey-Guacho.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		ACCBB97321DE468D001BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hey Guacho/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wyeworks.Hey-Guacho";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACCBB97421DE468D001BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hey Guacho/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wyeworks.Hey-Guacho";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACCBB93621DE4689001BC247 /* Build configuration list for PBXProject "Hey Guacho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCBB96821DE468D001BC247 /* Debug */,
+				ACCBB96921DE468D001BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCBB96A21DE468D001BC247 /* Build configuration list for PBXNativeTarget "Hey Guacho WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCBB96B21DE468D001BC247 /* Debug */,
+				ACCBB96C21DE468D001BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCBB96E21DE468D001BC247 /* Build configuration list for PBXNativeTarget "Hey Guacho WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCBB96F21DE468D001BC247 /* Debug */,
+				ACCBB97021DE468D001BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCBB97221DE468D001BC247 /* Build configuration list for PBXNativeTarget "Hey Guacho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCBB97321DE468D001BC247 /* Debug */,
+				ACCBB97421DE468D001BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACCBB93321DE4689001BC247 /* Project object */;
+}
