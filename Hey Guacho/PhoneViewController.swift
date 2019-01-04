@@ -38,11 +38,9 @@ class PhoneViewController: UIViewController {
     }
 
     @IBAction func sendMessage(_ sender: Any) {
-        session.sendMessage(["message": messageTextField.text!], replyHandler: { reply in
-            self.read = reply["read"] as! String
-        } , errorHandler: { error in
-            self.error = error.localizedDescription
-        })
+        do {
+            try session.updateApplicationContext(["message": messageTextField.text!])
+        } catch {}
 
         messageTextField.text = ""
     }

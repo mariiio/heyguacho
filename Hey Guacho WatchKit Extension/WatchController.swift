@@ -22,16 +22,8 @@ class WatchController: WKInterfaceController {
 }
 
 extension WatchController: WCSessionDelegate {
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        messageLabel.setText(message["message"] as? String)
-
-        let date = Date()
-        let calendar = Calendar.current
-        let hour = calendar.component(.hour, from: date)
-        let minute = calendar.component(.minute, from: date)
-        let second = calendar.component(.second, from: date)
-
-        replyHandler(["read": "\(hour):\(minute):\(second)"])
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        messageLabel.setText(applicationContext["message"] as? String)
     }
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
