@@ -37,14 +37,25 @@ class PhoneViewController: UIViewController {
         session.activate()
     }
 
+    @IBAction func reset(_ sender: Any) {
+        session.sendMessage(["reset": true], replyHandler: { _ in },
+                                            errorHandler: { error in
+                                                self.error = error.localizedDescription
+                                            })
+
+        error = ""
+        messageTextField.text = ""
+        read = "-"
+    }
+
     @IBAction func sendMessage(_ sender: Any) {
-        session.sendMessage(["message": messageTextField.text!], replyHandler: { reply in
+        guard let lastChar = messageTextField.text?.last else { return }
+
+        session.sendMessage(["message": String(lastChar)], replyHandler: { reply in
             self.read = reply["read"] as! String
         } , errorHandler: { error in
             self.error = error.localizedDescription
         })
-
-        messageTextField.text = ""
     }
 }
 

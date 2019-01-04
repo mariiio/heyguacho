@@ -13,17 +13,28 @@ import WatchConnectivity
 class WatchController: WKInterfaceController {
     @IBOutlet weak var messageLabel: WKInterfaceLabel!
 
+    private let session = WCSession.default
+    private var numbers = ""
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
-        WCSession.default.delegate = self
-        WCSession.default.activate()
+        session.delegate = self
+        session.activate()
     }
 }
 
 extension WatchController: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        messageLabel.setText(message["message"] as? String)
+        guard message["reset"] == nil else {
+            messageLabel.setText("Esperando mensaje..")
+            numbers = ""
+            return
+        }
+
+        let number = message["message"] as! String
+        numbers = numbers + number
+        messageLabel.setText(numbers)
 
         let date = Date()
         let calendar = Calendar.current
