@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACB24C5F21DE786000CCFA73 /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB97A21DE5399001BC247 /* WatchController.swift */; };
 		ACCBB93F21DE4689001BC247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB93E21DE4689001BC247 /* AppDelegate.swift */; };
-		ACCBB94121DE4689001BC247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB94021DE4689001BC247 /* ViewController.swift */; };
+		ACCBB94121DE4689001BC247 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB94021DE4689001BC247 /* PhoneViewController.swift */; };
 		ACCBB94421DE4689001BC247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB94221DE4689001BC247 /* Main.storyboard */; };
 		ACCBB94621DE468B001BC247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB94521DE468B001BC247 /* Assets.xcassets */; };
 		ACCBB94921DE468B001BC247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB94721DE468B001BC247 /* LaunchScreen.storyboard */; };
@@ -16,7 +17,6 @@
 		ACCBB95421DE468B001BC247 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB95221DE468B001BC247 /* Interface.storyboard */; };
 		ACCBB95621DE468C001BC247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB95521DE468C001BC247 /* Assets.xcassets */; };
 		ACCBB95D21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACCBB95C21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ACCBB96221DE468C001BC247 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB96121DE468C001BC247 /* InterfaceController.swift */; };
 		ACCBB96421DE468C001BC247 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB96321DE468C001BC247 /* ExtensionDelegate.swift */; };
 		ACCBB96621DE468D001BC247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBB96521DE468D001BC247 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,7 @@
 /* Begin PBXFileReference section */
 		ACCBB93B21DE4689001BC247 /* Hey Guacho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hey Guacho.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCBB93E21DE4689001BC247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACCBB94021DE4689001BC247 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACCBB94021DE4689001BC247 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		ACCBB94321DE4689001BC247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACCBB94521DE468B001BC247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCBB94821DE468B001BC247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,10 +76,10 @@
 		ACCBB95521DE468C001BC247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCBB95721DE468C001BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACCBB95C21DE468C001BC247 /* Hey Guacho WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hey Guacho WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACCBB96121DE468C001BC247 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		ACCBB96321DE468C001BC247 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		ACCBB96521DE468D001BC247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCBB96721DE468D001BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCBB97A21DE5399001BC247 /* WatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				ACCBB93E21DE4689001BC247 /* AppDelegate.swift */,
-				ACCBB94021DE4689001BC247 /* ViewController.swift */,
+				ACCBB94021DE4689001BC247 /* PhoneViewController.swift */,
 				ACCBB94221DE4689001BC247 /* Main.storyboard */,
 				ACCBB94521DE468B001BC247 /* Assets.xcassets */,
 				ACCBB94721DE468B001BC247 /* LaunchScreen.storyboard */,
@@ -146,8 +146,8 @@
 		ACCBB96021DE468C001BC247 /* Hey Guacho WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ACCBB96121DE468C001BC247 /* InterfaceController.swift */,
 				ACCBB96321DE468C001BC247 /* ExtensionDelegate.swift */,
+				ACCBB97A21DE5399001BC247 /* WatchController.swift */,
 				ACCBB96521DE468D001BC247 /* Assets.xcassets */,
 				ACCBB96721DE468D001BC247 /* Info.plist */,
 			);
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACCBB94121DE4689001BC247 /* ViewController.swift in Sources */,
+				ACCBB94121DE4689001BC247 /* PhoneViewController.swift in Sources */,
 				ACCBB93F21DE4689001BC247 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACCBB96421DE468C001BC247 /* ExtensionDelegate.swift in Sources */,
-				ACCBB96221DE468C001BC247 /* InterfaceController.swift in Sources */,
+				ACB24C5F21DE786000CCFA73 /* WatchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
