@@ -10,9 +10,7 @@ import UIKit
 import WatchConnectivity
 
 class PhoneViewController: UIViewController {
-    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var messageTextField: UITextField!
-    @IBOutlet weak var lastSeenLabel: UILabel!
 
     private let session = WCSession.default
 
@@ -21,6 +19,13 @@ class PhoneViewController: UIViewController {
 
         session.delegate = self
         session.activate()
+    }
+
+    @IBAction func reset(_ sender: Any) {
+        do {
+            try session.updateApplicationContext(["reset": true])
+            messageTextField.text = ""
+        } catch {}
     }
 
     @IBAction func sendMessage(_ sender: Any) {

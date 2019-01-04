@@ -30,9 +30,20 @@
                                     <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="editingChanged" id="xQS-Iy-Sl3"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPY-vE-HyB">
+                                <rect key="frame" x="164" y="356" width="46" height="30"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LoZ-T0-vW0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="TPY-vE-HyB" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" id="MFj-1M-JLz"/>
+                            <constraint firstItem="TPY-vE-HyB" firstAttribute="top" secondItem="pxQ-Cs-4qy" secondAttribute="bottom" constant="7.5" id="N1z-Ix-m8k"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OmI-Jl-ZNA"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMp-QZ-ebE"/>
                         </constraints>
