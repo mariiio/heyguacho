@@ -13,6 +13,8 @@ import WatchConnectivity
 class WatchController: WKInterfaceController {
     @IBOutlet weak var messageLabel: WKInterfaceLabel!
 
+    private var numbers = ""
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
@@ -23,7 +25,9 @@ class WatchController: WKInterfaceController {
 
 extension WatchController: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        messageLabel.setText(applicationContext["message"] as? String)
+        let number = applicationContext["message"] as! String
+        numbers = numbers + number
+        messageLabel.setText(numbers)
     }
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
