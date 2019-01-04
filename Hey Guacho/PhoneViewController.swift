@@ -22,13 +22,6 @@ class PhoneViewController: UIViewController {
             }
         }
     }
-    private var error: String = "" {
-        didSet {
-            DispatchQueue.main.async { [unowned self] in
-                self.errorLabel.text = self.error
-            }
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +31,10 @@ class PhoneViewController: UIViewController {
     }
 
     @IBAction func sendMessage(_ sender: Any) {
+        guard let lastChar = messageTextField.text?.last else { return }
         do {
-            try session.updateApplicationContext(["message": messageTextField.text!])
+            try session.updateApplicationContext(["message": String(lastChar)])
         } catch {}
-
-        messageTextField.text = ""
     }
 }
 

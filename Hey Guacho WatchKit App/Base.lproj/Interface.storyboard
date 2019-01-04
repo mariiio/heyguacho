@@ -14,7 +14,7 @@
             <objects>
                 <controller id="U70-u3-chI" customClass="WatchController" customModule="Hey_Guacho_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" text="Esperando mensaje.." id="zer-k1-AKY"/>
+                        <label alignment="center" verticalAlignment="center" text="Esperando mensaje.." numberOfLines="3" id="zer-k1-AKY"/>
                     </items>
                     <connections>
                         <outlet property="messageLabel" destination="zer-k1-AKY" id="40j-4P-XFd"/>
