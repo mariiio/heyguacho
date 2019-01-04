@@ -24,14 +24,14 @@ class WatchController: WKInterfaceController {
 }
 
 extension WatchController: WCSessionDelegate {
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        guard applicationContext["reset"] == nil else {
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        guard userInfo["reset"] == nil else {
             messageLabel.setText("Esperando mensaje..")
             numbers = ""
             return
         }
 
-        let number = applicationContext["message"] as! String
+        let number = userInfo["message"] as! String
         numbers = numbers + number
         messageLabel.setText(numbers)
     }
