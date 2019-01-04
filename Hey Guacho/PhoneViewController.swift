@@ -30,6 +30,13 @@ class PhoneViewController: UIViewController {
         session.activate()
     }
 
+    @IBAction func reset(_ sender: Any) {
+        do {
+            try session.updateApplicationContext(["reset": true])
+            messageTextField.text = ""
+        } catch {}
+    }
+
     @IBAction func sendMessage(_ sender: Any) {
         guard let lastChar = messageTextField.text?.last else { return }
         do {
