@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC7DB5BE21E3C5D30085BC4E /* free.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC7DB5BD21E3C5D20085BC4E /* free.jpg */; };
+		AC7DB5C121E3D9330085BC4E /* free.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC7DB5C021E3D9330085BC4E /* free.jpg */; };
 		ACB24C5F21DE786000CCFA73 /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB97A21DE5399001BC247 /* WatchController.swift */; };
 		ACCBB93F21DE4689001BC247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB93E21DE4689001BC247 /* AppDelegate.swift */; };
 		ACCBB94121DE4689001BC247 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB94021DE4689001BC247 /* PhoneViewController.swift */; };
@@ -64,6 +66,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC7DB5BD21E3C5D20085BC4E /* free.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = free.jpg; path = ../../free.jpg; sourceTree = "<group>"; };
+		AC7DB5C021E3D9330085BC4E /* free.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = free.jpg; sourceTree = "<group>"; };
 		ACCBB93B21DE4689001BC247 /* Hey Guacho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hey Guacho.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCBB93E21DE4689001BC247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACCBB94021DE4689001BC247 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			children = (
 				ACCBB93E21DE4689001BC247 /* AppDelegate.swift */,
 				ACCBB94021DE4689001BC247 /* PhoneViewController.swift */,
+				AC7DB5BD21E3C5D20085BC4E /* free.jpg */,
 				ACCBB94221DE4689001BC247 /* Main.storyboard */,
 				ACCBB94521DE468B001BC247 /* Assets.xcassets */,
 				ACCBB94721DE468B001BC247 /* LaunchScreen.storyboard */,
@@ -148,6 +153,7 @@
 			children = (
 				ACCBB96321DE468C001BC247 /* ExtensionDelegate.swift */,
 				ACCBB97A21DE5399001BC247 /* WatchController.swift */,
+				AC7DB5C021E3D9330085BC4E /* free.jpg */,
 				ACCBB96521DE468D001BC247 /* Assets.xcassets */,
 				ACCBB96721DE468D001BC247 /* Info.plist */,
 			);
@@ -257,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACCBB94921DE468B001BC247 /* LaunchScreen.storyboard in Resources */,
+				AC7DB5BE21E3C5D30085BC4E /* free.jpg in Resources */,
 				ACCBB94621DE468B001BC247 /* Assets.xcassets in Resources */,
 				ACCBB94421DE4689001BC247 /* Main.storyboard in Resources */,
 			);
@@ -276,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACCBB96621DE468D001BC247 /* Assets.xcassets in Resources */,
+				AC7DB5C121E3D9330085BC4E /* free.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

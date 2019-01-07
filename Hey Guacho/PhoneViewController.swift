@@ -10,18 +10,10 @@ import UIKit
 import WatchConnectivity
 
 class PhoneViewController: UIViewController {
-    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var messageTextField: UITextField!
-    @IBOutlet weak var lastSeenLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
 
     private let session = WCSession.default
-    private var read: String = "" {
-        didSet {
-            DispatchQueue.main.async { [unowned self] in
-                self.lastSeenLabel.text = self.read
-            }
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +21,14 @@ class PhoneViewController: UIViewController {
         session.delegate = self
         session.activate()
     }
-
-    @IBAction func reset(_ sender: Any) {
-        session.transferUserInfo(["reset": true])
-        messageTextField.text = ""
-    }
-
-    @IBAction func sendMessage(_ sender: Any) {
-        guard let lastChar = messageTextField.text?.last else { return }
-        session.transferUserInfo(["message": String(lastChar)])
-    }
 }
 
 extension PhoneViewController: WCSessionDelegate {
+    func session(_ session: WCSession, didReceive file: WCSessionFile) {
+        let imageData = NSData.init(contentsOf: file.fileURL)! as Data
+        imageView.image = UIImage(data: imageData)
+    }
+
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
     func sessionDidBecomeInactive(_ session: WCSession) { }
     func sessionDidDeactivate(_ session: WCSession) { }

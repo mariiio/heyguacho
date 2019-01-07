@@ -13,28 +13,22 @@ import WatchConnectivity
 class WatchController: WKInterfaceController {
     @IBOutlet weak var messageLabel: WKInterfaceLabel!
 
-    private var numbers = ""
+    private let session = WCSession.default
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
-        WCSession.default.delegate = self
-        WCSession.default.activate()
+        session.delegate = self
+        session.activate()
+    }
+
+    @IBAction func sendMessage() {
+        let url = Bundle.main.url(forResource: "free", withExtension: "jpg")!
+
+        session.transferFile(url, metadata: nil)
     }
 }
 
 extension WatchController: WCSessionDelegate {
-    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        guard userInfo["reset"] == nil else {
-            messageLabel.setText("Esperando mensaje..")
-            numbers = ""
-            return
-        }
-
-        let number = userInfo["message"] as! String
-        numbers = numbers + number
-        messageLabel.setText(numbers)
-    }
-
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
 }

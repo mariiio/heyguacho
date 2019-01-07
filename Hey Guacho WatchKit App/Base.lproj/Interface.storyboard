@@ -14,11 +14,12 @@
             <objects>
                 <controller id="U70-u3-chI" customClass="WatchController" customModule="Hey_Guacho_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Esperando mensaje.." numberOfLines="3" id="zer-k1-AKY"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Libre soy!" id="6cI-m0-2V7">
+                            <connections>
+                                <action selector="sendMessage" destination="U70-u3-chI" id="gu0-ty-55c"/>
+                            </connections>
+                        </button>
                     </items>
-                    <connections>
-                        <outlet property="messageLabel" destination="zer-k1-AKY" id="40j-4P-XFd"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="6" y="83"/>
