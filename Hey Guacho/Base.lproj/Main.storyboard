@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prison break" translatesAutoresizingMaskIntoConstraints="NO" id="XuZ-Me-1Kk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pxQ-Cs-4qy">
                                 <rect key="frame" x="62.5" y="318.5" width="250" height="30"/>
                                 <constraints>
@@ -31,9 +34,11 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPY-vE-HyB">
-                                <rect key="frame" x="164" y="356" width="46" height="30"/>
+                                <rect key="frame" x="154.5" y="356" width="66" height="38"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="RESET">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LoZ-T0-vW0"/>
@@ -42,10 +47,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="XuZ-Me-1Kk" secondAttribute="bottom" id="7m2-EB-pvv"/>
+                            <constraint firstItem="XuZ-Me-1Kk" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="JXg-0f-aNF"/>
                             <constraint firstItem="TPY-vE-HyB" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" id="MFj-1M-JLz"/>
                             <constraint firstItem="TPY-vE-HyB" firstAttribute="top" secondItem="pxQ-Cs-4qy" secondAttribute="bottom" constant="7.5" id="N1z-Ix-m8k"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OmI-Jl-ZNA"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMp-QZ-ebE"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="XuZ-Me-1Kk" secondAttribute="trailing" id="dPc-RH-6yC"/>
+                            <constraint firstItem="XuZ-Me-1Kk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fwt-Tw-cZu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
@@ -58,4 +67,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="97.601199400299862"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="prison break" width="960" height="1440"/>
+    </resources>
 </document>
