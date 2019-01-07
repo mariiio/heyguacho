@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prison break" translatesAutoresizingMaskIntoConstraints="NO" id="kMq-4K-E4C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pxQ-Cs-4qy">
                                 <rect key="frame" x="62.5" y="318.5" width="250" height="30"/>
                                 <constraints>
@@ -31,27 +34,28 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last seen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHy-ww-hSp">
-                                <rect key="frame" x="62.5" y="356" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="62.5" y="356" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EB8-hR-b9C">
-                                <rect key="frame" x="149" y="356" width="8" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="154" y="356" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akp-oA-re1">
                                 <rect key="frame" x="62.5" y="250" width="252" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRd-B3-5g9">
-                                <rect key="frame" x="164.5" y="385" width="46" height="30"/>
+                                <rect key="frame" x="154.5" y="385" width="66" height="38"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="RESET">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRJ-6x-Rca"/>
@@ -60,14 +64,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kMq-4K-E4C" firstAttribute="bottom" secondItem="Uee-0j-aNJ" secondAttribute="bottom" id="26L-1t-cCX"/>
                             <constraint firstItem="EB8-hR-b9C" firstAttribute="leading" secondItem="vHy-ww-hSp" secondAttribute="trailing" constant="7.5" id="2gp-8V-97F"/>
                             <constraint firstItem="KRd-B3-5g9" firstAttribute="top" secondItem="vHy-ww-hSp" secondAttribute="bottom" constant="8" id="4C2-BF-0gr"/>
+                            <constraint firstItem="kMq-4K-E4C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5pY-ok-nBo"/>
                             <constraint firstItem="Akp-oA-re1" firstAttribute="leading" secondItem="pxQ-Cs-4qy" secondAttribute="leading" id="8OC-t9-Ojx"/>
                             <constraint firstItem="vHy-ww-hSp" firstAttribute="leading" secondItem="pxQ-Cs-4qy" secondAttribute="leading" id="9fj-qY-ANZ"/>
                             <constraint firstItem="KRd-B3-5g9" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" id="LwX-KD-ZJZ"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OmI-Jl-ZNA"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMp-QZ-ebE"/>
+                            <constraint firstItem="kMq-4K-E4C" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="S1U-Tt-YdE"/>
                             <constraint firstItem="Akp-oA-re1" firstAttribute="height" secondItem="pxQ-Cs-4qy" secondAttribute="height" multiplier="2" id="ZOO-pw-oTd"/>
+                            <constraint firstItem="kMq-4K-E4C" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="gm2-rq-zdI"/>
                             <constraint firstItem="EB8-hR-b9C" firstAttribute="centerY" secondItem="vHy-ww-hSp" secondAttribute="centerY" id="kcf-uh-b3n"/>
                             <constraint firstItem="vHy-ww-hSp" firstAttribute="top" secondItem="pxQ-Cs-4qy" secondAttribute="bottom" constant="7.5" id="olH-W4-mYV"/>
                             <constraint firstItem="Akp-oA-re1" firstAttribute="width" secondItem="pxQ-Cs-4qy" secondAttribute="width" constant="2" id="wFa-PZ-Fkp"/>
@@ -86,4 +94,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="97.601199400299862"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="prison break" width="960" height="1440"/>
+    </resources>
 </document>
