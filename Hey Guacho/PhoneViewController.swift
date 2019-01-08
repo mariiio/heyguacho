@@ -11,9 +11,14 @@ import WatchConnectivity
 
 class PhoneViewController: UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var images: [UIImageView]!
 
     private let session = WCSession.default
+    private var imageIndex = 0 {
+        didSet {
+            imageIndex = imageIndex % 4
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +31,9 @@ class PhoneViewController: UIViewController {
 extension PhoneViewController: WCSessionDelegate {
     func session(_ session: WCSession, didReceive file: WCSessionFile) {
         let imageData = NSData.init(contentsOf: file.fileURL)! as Data
-        imageView.image = UIImage(data: imageData)
+
+        imageIndex += 1
+        images[imageIndex].image = UIImage(data: imageData)
     }
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
