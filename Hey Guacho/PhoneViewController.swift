@@ -53,7 +53,7 @@ class PhoneViewController: UIViewController {
 
         session.sendMessage(["message": String(lastChar)], replyHandler: { reply in
             self.read = reply["read"] as! String
-        } , errorHandler: { error in
+        }, errorHandler: { error in
             self.error = error.localizedDescription
         })
     }
