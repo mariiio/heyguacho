@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PhoneViewController" customModule="Hey_Guacho" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prison break" translatesAutoresizingMaskIntoConstraints="NO" id="rqi-jc-HRi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="-1" y="0.0" width="415" height="896"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pxQ-Cs-4qy">
-                                <rect key="frame" x="62.5" y="318.5" width="250" height="30"/>
+                                <rect key="frame" x="82" y="433" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="YDg-21-NVB"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPY-vE-HyB">
-                                <rect key="frame" x="154.5" y="356" width="66" height="38"/>
+                                <rect key="frame" x="174" y="470.66666666666669" width="66" height="38"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="RESET">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,14 +46,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rqi-jc-HRi" firstAttribute="bottom" secondItem="Uee-0j-aNJ" secondAttribute="bottom" id="3iN-2I-1Y5"/>
                             <constraint firstItem="rqi-jc-HRi" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="8CI-Vb-Cz7"/>
                             <constraint firstItem="rqi-jc-HRi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GUB-ad-fmj"/>
                             <constraint firstItem="TPY-vE-HyB" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" id="MFj-1M-JLz"/>
                             <constraint firstItem="TPY-vE-HyB" firstAttribute="top" secondItem="pxQ-Cs-4qy" secondAttribute="bottom" constant="7.5" id="N1z-Ix-m8k"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OmI-Jl-ZNA"/>
+                            <constraint firstAttribute="bottom" secondItem="rqi-jc-HRi" secondAttribute="bottom" id="Pc2-94-mIq"/>
                             <constraint firstItem="pxQ-Cs-4qy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMp-QZ-ebE"/>
-                            <constraint firstItem="rqi-jc-HRi" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="nZh-Vo-IbB"/>
+                            <constraint firstItem="rqi-jc-HRi" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="-1" id="nZh-Vo-IbB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="97.601199400299862"/>
+            <point key="canvasLocation" x="136.23188405797103" y="97.098214285714278"/>
         </scene>
     </scenes>
     <resources>
